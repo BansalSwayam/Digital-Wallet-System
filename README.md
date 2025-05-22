@@ -12,28 +12,40 @@ digital-wallet/
 ├── package.json
 ├── package-lock.json
 │
+
+
 ├── models/
 │ ├── userM.js
 │ └── transactionM.js
 │
+
+
 ├── controllers/
 │ ├── authC.js
 │ ├── walletC.js
 │ └── adminC.js
 │
+
+
 ├── routes/
 │ ├── authR.js
 │ ├── walletR.js
 │ └── adminR.js
 │
+
+
 ├── middleware/
 │ ├── authMW.js
 │ └── fraudDetection.js
 │
+
+
 ├── utils/
 │ ├── scheduler.js
 │ ├── emailMock.js
 │ └── currencyConverter.js
+
+
 M stands for Models
 R stands for Routes
 MW stands for MiddleWare
