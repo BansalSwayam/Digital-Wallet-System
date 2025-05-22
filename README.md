@@ -1,10 +1,10 @@
-# 💼 Digital Wallet Backend
+# Digital Wallet Backend
 
 A secure and feature-rich digital wallet system built with **Node.js**, **Express**, and **MongoDB**, featuring user authentication, wallet operations, fraud detection, and admin-level reporting APIs.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 digital-wallet/
 ├── app.js
@@ -54,39 +54,39 @@ C stands for Controllers
 
 ---
 
-## 🧩 Folder & File Descriptions
+## Folder & File Descriptions
 
-### ✅ `app.js`
+###  `app.js`
 - Main server entry point
 - Connects to MongoDB
 - Loads middleware and routes
 
-### ✅ `models/`
+###  `models/`
 - **`userModel.js`**: User schema (username, password, balance, refreshToken, softDelete)
 - **`transactionModel.js`**: Transaction schema (from, to, amount, type, currency, flagged,timestamp,reason,softDeleted)
 
-### ✅ `controllers/`
+###  `controllers/`
 - **`authController.js`**: Handles registration, login, refresh, logout
 - **`walletController.js`**: Deposit, withdraw, transfer, and transaction history
 - **`adminController.js`**: Admin-only access to flagged transactions, summaries, and top users
 
-### ✅ `routes/`
+###  `routes/`
 - **`authRoutes.js`**: `/register`, `/login`, `/refresh`, `/logout`
 - **`walletRoutes.js`**: `/deposit`, `/withdraw`, `/transfer`, `/history`
 - **`adminRoutes.js`**: `/flagged`, `/summary`, `/top-users`
 
-### ✅ `middleware/`
+###  `middleware/`
 - **`authMiddleware.js`**: Protects routes via JWT
 - **`fraudDetection.js`**: Flags suspicious activity, like large withdrawals or rapid transfers
 
-### ✅ `utils/`
+###  `utils/`
 - **`currencyConverter.js`**: Allows you to use any currency and uses a dynamic API that works live for converting any currency. USD is used as default currency on backend but while sending request you can use any Currency.
 - **`emailMock.js`**: Logs mock email alerts onto the consol
 - **`scheduler.js`**: Daily fraud scan job that takes place after every 24 Hours(Daily)
 
 ---
 
-## 🔐 JWT Authentication (Access & Refresh Tokens)
+##  JWT Authentication (Access & Refresh Tokens)
 
 This project uses **JSON Web Tokens (JWT)** for secure authentication, including short-lived access tokens and long-lived refresh tokens.
 
@@ -97,14 +97,14 @@ This project uses **JSON Web Tokens (JWT)** for secure authentication, including
 - **Usage**: Sent in `Authorization` header as `Bearer <token>`
 - **Signed with**: `JWT_SECRET`
 
-### ♻️ Refresh Token
+###  Refresh Token
 - **Purpose**: Used to obtain a new access token after it expires
 - **Lifespan**: 7 days
 - **Stored**: HTTP-only cookie
 - **Usage**: Automatically included in request to `/api/auth/refresh`
 - **Signed with**: `REFRESH_SECRET`
 
-### 🔄 Token Lifecycle
+###  Token Lifecycle
 
 
 1. User logs in with /api/auth/login
