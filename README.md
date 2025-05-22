@@ -119,12 +119,7 @@ This project uses **JSON Web Tokens (JWT)** for secure authentication, including
 
 ## Currency Support
 
-- Default: USD
-- Optional: INR
-- Exchange rate: 1 USD = 80 INR
-- Automatically converts deposits, withdrawals, and transfers to USD internally
-
----
+With use of dynamic api live currency conversion takes place with all currency types.
 
 ## Fraud Detection
 
