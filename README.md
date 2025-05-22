@@ -139,4 +139,7 @@ Create a `.env` file:
 MONGO_URI=mongodb://localhost:27017/digital_wallet
 JWT_SECRET=
 REFRESH_SECRET=
+```
+# 📽️ Demo Video
 
+👉 [Watch the project API walkthrough (MP4)](https://drive.google.com/file/d/1tHOSKPL2a9bbttgChDOUbnp5C2vKMUyZ/view?usp=drive_link)
