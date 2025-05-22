@@ -142,4 +142,4 @@ REFRESH_SECRET=
 ```
 # 📽️ Demo Video
 
-👉 [Watch the project API walkthrough (MP4)](https://drive.google.com/file/d/1tHOSKPL2a9bbttgChDOUbnp5C2vKMUyZ/view?usp=drive_link)
+[Watch the project API walkthrough (MP4)](https://drive.google.com/file/d/1tHOSKPL2a9bbttgChDOUbnp5C2vKMUyZ/view?usp=drive_link)
