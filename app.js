@@ -6,12 +6,16 @@ import authRoutes from './routes/authR.js';
 import walletRoutes from './routes/walletR.js';
 import adminRoutes from './routes/adminR.js';
 import { scheduleFraudScan } from './utils/scheduler.js';
+import cookieParser from 'cookie-parser';
+
+
+
 
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
-
+app.use(cookieParser());
 app.use('/api/auth', authRoutes);
 app.use('/api/wallet', walletRoutes);
 app.use('/api/admin', adminRoutes);
