@@ -7,7 +7,7 @@ export const updateExchangeRates = async () => {
     const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
     const data = await res.json();
     exchangeRates = data.rates;
-    console.log('Exchange rates updated:', exchangeRates);
+    console.log("Exchange rates updated");
   } catch (error) {
     console.error('Failed to fetch exchange rates:', error);
   }
